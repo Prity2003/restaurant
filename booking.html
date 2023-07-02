@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <section id="form" data-aos="fade-up">
+        <div class="container">
+          <h3 class="form__title">Book Table</h3>
+          <p class="para">Please arrive on time for your reservation.If you are late for your reservation, 
+            your reservation will be canceled.
+        </p>
+        <div class="line">
+        </div>
+          <div class="form__wrapper">
+            <form name="booking" method="POST" netlify>
+              <div class="form__group">
+                <label for="firstName">First Name</label>
+                <br>
+                <input type="text" id="firstName" name="First Name" required>
+              </div>
+              <div class="form__group">
+                <label for="lastName">Last Name</label>
+                <br>
+                <input type="text" id="lastName" name="Last Name" required>
+              </div>
+              <div class="form__group">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="Email" required>
+              </div>
+              <div class="form__group">
+                  <label for="guestNumber">Guest Number</label>
+                  <br>
+                  <input type="number" id="guestNumber" name="Guest Number" min="1" max="15" required>
+                </div>
+                <div class="form__group">
+                    <label for="date">Date</label>
+                    <br>
+                    <input type="date" id="date" name="Date" required>
+                </div>
+                <div class="form__group">
+                    <label for="time">time</label>
+                    <br>
+                    <input type="time" id="time" name="Time" required>
+                </div>
+                <div class="form__group">
+                  <label for="tableType">Table Type</label>
+                  <br>
+                  <select name="Table Type" id="tableType" required>
+                    <option selected disabled>Choose</option>
+                    <option value="small">Small(2 persons)</option>
+                    <option value="medium">Small(4 persons)</option>
+                    <option value="large">large(6 persons)</option>
+                  </select>
+                </div>
+                <div class="form__group form__group__full">
+                    <label for="note">Note</label>
+                    <br>
+                <textarea name="Note" id="note" rows="4"></textarea>
+              </div>
+              <div class="btn">
+                <input type="button" value="Book Table"></input>
+                </div>
+            </form>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

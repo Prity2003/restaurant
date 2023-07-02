@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    #google {
+        position: relative;
+        border-top: 100px solid #EA4335;
+        border-right: 100px solid #4285F4;
+        border-bottom: 100px solid #34A853;
+        border-left: 100px solid #FBBC05;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        width: 300px;
+        height: 300px;
+        padding: 0;
+        margin: 10vh auto 0;
+      }
+      #google::before {
+        content: "";
+        z-index: 100;
+        position: absolute;
+        top: 50%;
+        right: -95px;
+        transform: translateY(-50%);
+        width: 245px;
+        height: 100px;
+        background: #4285F4;
+      }
+      
+      #google::after {
+        content: "";
+        z-index: 101;
+        position: absolute;
+        border-top: 200px solid transparent;
+        border-right: 200px solid #FFFFFF;
+        top: -100px;
+        right: -100px;
+        width: 0;
+        height: 0;
+      }
+    <!-- <link rel="stylesheet" href="sample.css"> -->
+</head>
+<body>
+    <!-- <div id="navbar">
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Service</a></li>
+            <li class="item"><a href="#">Contact</a></li>
+        </ul>
+        <i class='bx bx-hide eye-icon'></i> -->
+        <div id="google"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        .box {
+            text-align: center;
+            background-color: rgb(61, 60, 60);
+            color: white;
+            display: block;
+            height: 700px;
+            width: 50%;
+            margin-left: 300px;
+            padding: 3px 4px;
+        }
+
+        .box h1 {
+            text-align: center;
+        }
+
+        .box h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .box p input {
+            text-align: left;
+        }
+
+        .btn {
+            background-color: green;
+            color: white;
+            border-radius: 8px solid black;
+            margin: 3px;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Feedback & Survey</h1>
+        <h3>Please take a moment to fill out this form</h3>
+        <hr>
+        <br>
+        <form>
+            <p>1.Please rate the quality of service you received from us:</p>
+            <input type="radio" name="quality" id="ex" value="Excellent">
+            <label for="ex">Excellent</label>
+            <input type="radio" name="quality" id="good">
+            <label for="good">Good</label>
+            <input type="radio" name="quality" id="fair">
+            <label for="fair">Fair</label>
+            <input type="radio" name="quality" id="poor">
+            <label for="poor">Poor</label>
+            <br>
+
+            <p>2. Please rate the information we provided on our website:</p>
+            <input type="radio" name="information" id="ex" value="Excellent">
+            <label for="ex">Excellent</label>
+            <input type="radio" name="information" id="good">
+            <label for="good">Good</label>
+            <input type="radio" name="information" id="fair">
+            <label for="fair">Fair</label>
+            <input type="radio" name="information" id="poor">
+            <label for="poor">Poor</label>
+            <br>
+
+            <p>3. Please rate our staff in terms of efficiency:</p>
+            <input type="radio" name="staff" id="ex" value="Excellent">
+            <label for="ex">Excellent</label>
+            <input type="radio" name="staff" id="good">
+            <label for="good">Good</label>
+            <input type="radio" name="staff" id="fair">
+            <label for="fair">Fair</label>
+            <input type="radio" name="staff" id="poor">
+            <label for="poor">Poor</label>
+            <br>
+
+            <p>4. Please rate our responsivness to the feedback:</p>
+            <input type="radio" name="responsivness" id="ex" value="Excellent">
+            <label for="ex">Excellent</label>
+            <input type="radio" name="responsivness" id="good">
+            <label for="good">Good</label>
+            <input type="radio" name="responsivness" id="fair">
+            <label for="fair">Fair</label>
+            <input type="radio" name="responsivness" id="poor">
+            <label for="poor">Poor</label>
+            <br>
+
+            <p>5. Please rate your overall experience with our service:</p>
+            <input type="radio" name="experience" id="ex" value="Excellent">
+            <label for="ex">Excellent</label>
+            <input type="radio" name="experience" id="good">
+            <label for="good">Good</label>
+            <input type="radio" name="experience" id="fair">
+            <label for="fair">Fair</label>
+            <input type="radio" name="experience" id="poor">
+            <label for="poor">Poor</label>
+            <br>
+
+            <p>6. Would you recommend us to your friends and family:</p>
+            <input type="radio" name="recommend" id="yes" value="Yes">
+            <label for="yes">Yes</label>
+            <input type="radio" name="recommend" id="no" value="No">
+            <label for="no">No</label>
+            <br>
+            <br>
+            <button class="btn">Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
